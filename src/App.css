@@ -2,3 +2,37 @@
   text-align: center;
 margin:0px;
 }
+.search{
+  background-color:green;
+  color:white;
+  padding:10px;
+}
+.search back:hover{
+  background-color:white;
+  color:white;
+  padding:10px;
+}
+.search input{
+  margin-bottom:20px;
+  width:30%;
+  height:30px;
+  padding-left:10px;
+}
+.searchTable{
+   margin:auto;
+   margin-top:10px;
+   padding-top:20px;
+   background-color:green;
+   color:white;
+   width:70%;
+}
+table, th, td {
+  border: 1px solid;
+  border-spacing: 0.5em;
+  padding:10px;
+  text-align: left;
+}
+tr:hover {
+  background-color: white;
+  color:green;
+}

@@ -6,6 +6,9 @@ import Login from './components/Auth/Login';
 import { auth } from "./firebase";
 import Welcome from './components/Home/Welcome';
 import Signup from "./components/Auth/Signup";
+import EmployeeData from './components/Home/employee';
+import SearchData from "./components/SearchData/SearchData";
+
 function App() {
   const [userName, setUserName] = useState("");
 
@@ -25,6 +28,8 @@ function App() {
               <Route path='/Login' element={<Login/>}/>
               <Route path='/' element={<Signup/>}/>
               <Route path='/Welcome' element={<Welcome name={userName}/>}/>
+              <Route path='/employee' element={<EmployeeData/>}/>
+              <Route path="/search" element={<SearchData/>}/>
             </Routes>
       </Router>
     </div>

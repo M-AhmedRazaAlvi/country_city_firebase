@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import welcome from "./welcome.css";
+import { Link } from "react-router-dom";
 function Welcome(props) {
   const [data, setdata] = useState([]);
   const [getcountry, setCountry] = useState();
@@ -29,12 +30,11 @@ function Welcome(props) {
   };
 
   //////////     set city in which state ////////////
-  
+
   const handleState = (e) => {
     let cities = data.filter((city) => city.subcountry === e.target.value);
     cities.sort();
     setCities(cities);
-
   };
   return (
     <>
@@ -74,6 +74,10 @@ function Welcome(props) {
               ))}
             </select>
           </div>
+        </div>
+        <div className="next">
+        <Link to="/search">Next</Link>
+        
         </div>
       </div>
     </>
